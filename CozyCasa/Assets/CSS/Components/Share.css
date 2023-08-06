@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Share {
+    position: relative;
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+  }
+  
+  .clickable-image {
+    cursor: pointer;
+  }
+  
+  .hidden-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: #FFF3E3;
+    background-color: #B88E2F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .hidden-link:hover {
+    background-color: #B88E2FCC;
+  }
+  .Share p{
+    font-size: 20px;
+    color: #616161;
+    font-weight: 600;
+  }
+
+  .link{
+    font-size: 40px;
+    color: #3A3A3A;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+

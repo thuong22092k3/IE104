@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav .Logo_Name a {
+    text-decoration: none;
+    color: black;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+nav .menu {
+    max-width: full;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .tab {
+    display: flex;
+}
+
+.menu .tab li {
+    list-style: none;
+    margin-left: 7 px;
+}
+
+.menu .tab li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.menu .tab li.active a {
+    color: #B88E2F;
+}
+
+.menu .tab li a:hover {
+    color: #B88E2F;
+}
+
+.menu .icon {
+    display: flex;
+}
+
+.menu .icon div {
+    list-style: none;
+    margin-left: 7 px;
+}
+
+.menu .icon div button {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.menu .icon div button:hover {
+    color: #B88E2F;
+}
+
+#cartSidebar {
+    z-index: 1000;
+    position: fixed;
+    top: 0px; /* Để đưa cart sidebar phía trên icon cart, bạn có thể điều chỉnh giá trị này */
+    right: 20px; 
+}
+
+#overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    opacity: 0.8;
+    display: none;
+    inset: 0;
+}
+

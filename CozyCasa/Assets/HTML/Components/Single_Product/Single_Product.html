@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div id="breadcrumb-placeholder"></div>
+    <div id="information-product-placeholder" class="px-28 pt-6"></div>
+    <hr class="border-[#D9D9D9]" />
+    <div id="des-add-rev-placeholder" class="px-28"></div>
+    <hr class="border-[#D9D9D9]" />
+    <div id="related-product-placeholder" class="px-28"></div>
+    <div id="footer-placeholder"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#header-placeholder").load("/CozyCasa/Assets/HTML/Components/Header/Header.html");
+  });
+  $(document).ready(function() {
+    $("#information-product-placeholder").load("/CozyCasa/Assets/HTML/Components/Single_Product/Information_Product.html");
+  });
+  $(document).ready(function() {
+    $("#breadcrumb-placeholder").load("/CozyCasa/Assets/HTML/Components/Single_Product/Breadcrumb.html");
+  });
+  $(document).ready(function() {
+    $("#des-add-rev-placeholder").load("/CozyCasa/Assets/HTML/Components/Single_Product/Des_Add_Rev.html");
+  });
+  $(document).ready(function() {
+    $("#related-product-placeholder").load("/CozyCasa/Assets/HTML/Components/Single_Product/Related_Product.html");
+  });
+  $(document).ready(function() {
+    $("#footer-placeholder").load("/CozyCasa/Assets/HTML/Components/Footer/Footer.html");
+  });
+</script>
+</body>
+</html>

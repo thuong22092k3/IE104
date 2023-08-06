@@ -1,0 +1,125 @@
+/* styles.css */
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+
+td {
+    padding-top: 50px;
+    text-align: left;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+th {
+    text-align: left;
+    background-color: #F9F1E7;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+td img {
+    width: 108px;
+    height: 105px;
+    margin-right: 10px;
+    background-color: #F9F1E7;
+    border-radius: 10px;
+}
+
+#quantity-tb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+    color: #000;
+}
+
+#subtotal-tb {
+    color: #000;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button i {
+    color: #B88E2F;
+}
+
+.delete-button i:hover {
+    color: red;
+}
+
+.cart-total {
+    width: 393px;
+    height: 390px;
+    background-color: #F9F1E7;
+}
+
+.cart-total h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.subtotal,
+.total {
+    display: flex;
+    justify-content:space-between;
+    margin: 30px 70px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#subtotal-cart-total{
+    color: #9F9F9F;
+    font-weight: 400;
+}
+
+#total-cart-total{
+    font-size: 20px;
+    color: #B88E2F;
+    font-weight: 500;
+}
+
+.checkout-action {
+    display: flex;
+    justify-content: center;
+    margin: 64px;
+  }
+
+.checkout-button {
+    background-color: transparent;
+     border: 1px solid #000;
+     border-radius: 15px;
+     height: 59px;
+     width: 222px;
+     margin-left: 15px;
+     font-size: 20px;
+     font-weight: 400;
+     cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #B88E2F;
+    color: #fff;
+    border: none;
+}

@@ -1,0 +1,162 @@
+.Inspirations {
+  background-color: #FCF8F3;
+  height: 670px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-inspirations {
+  background-size: cover;
+  background-position: center;
+}
+
+#inspirations-header {
+  font-size: 40px;
+  font-weight: 700;
+  color: #3A3A3A;
+}
+
+#inspirations-content {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+}
+
+.explore_more_btn {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 48px;
+  width: 176px;
+  height: 48px;
+  background-color: #B88E2F;
+  color: #fff;
+  border: none;
+}
+
+.explore_more_btn:hover {
+  background-color: #B88E2FCC;
+}
+
+.slider-container {
+  position: relative;
+  /* Điều chỉnh kích thước slider tùy ý */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 404px;
+  height: 582px;
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 217px;
+  height: 130px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+#slide-content1{
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+}
+
+#slide-content2{
+  font-size: 28px;
+  font-weight: 600;
+  color: #3A3A3A;
+}
+
+.slide_btn {
+  font-size: 20px;
+  font-weight: 600;
+  /* margin-top: 48px; */
+  width: 48px;
+  height: 48px;
+  background-color: #B88E2F;
+  color: #fff;
+  border: none;
+  position: absolute;
+  bottom: 30px;
+  right : 109px;
+}
+.slide_btn:hover {
+  background-color: #B88E2FCC;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #B88E2F;
+  text-align: center;
+  align-items: center;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px #c0b9b9;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #B88E2F;
+  color: #fff;
+}
+
+#prev {
+  left: 5px;
+}
+
+#next {
+  right: 5px;
+}
+
+.dots {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.active1::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #B88E2F;
+  border-radius: 50%;
+}
+
+.active1 {
+  background-color: #B88E2F;
+}

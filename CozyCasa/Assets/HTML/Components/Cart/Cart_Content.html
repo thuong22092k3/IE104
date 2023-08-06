@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Cart_Content.css">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Font_Styles.css">
+</head>
+
+<body>
+    <div class="cart-content">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product 1 -->
+                <tr>
+                    <td><img src="/CozyCasa/Assets/Images/Asgaard sofa 5.jpg" alt="Product 1"></td>
+                    <td>
+                        <span>Asgaard sofa</span>
+                    </td>
+                    <td>Rs. 250,000.00</td>
+                    <td>
+                        <div id="quantity-tb"><span>1</span></div>
+                    </td>
+                    <td id="subtotal-tb">Rs. 250,000.00</td>
+                    <td>
+                        <button class="delete-button">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- Add more products here -->
+            </tbody>
+        </table>
+        <div class="cart-total">
+            <h3>Cart Totals</h3>
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span id="subtotal-cart-total">Rs. 250,000.00</span>
+            </div>
+            <div class="total">
+                <span>Total</span>
+                <span id="total-cart-total">Rs. 250,000.00</span>
+            </div>
+            <div class="checkout-action">
+                <button class="checkout-button" onclick="goToCheckOut()">Check Out</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goToCheckOut() {
+            window.location.href = "/CozyCasa/Assets/HTML/Components/Check_Out/Check_Out.html";
+        }
+    </script>
+</body>
+
+</html>

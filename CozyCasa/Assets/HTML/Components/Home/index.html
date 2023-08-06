@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart Product Overlay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .cart-product {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 285px;
+            cursor: pointer;
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cart-product:hover .overlay {
+            display: flex;
+        }
+
+        .icon {
+            font-size: 14px;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        .button-add-to-card {
+            width: 202px;
+            height: 48px;
+            background-color: #fff;
+            color: #B88E2F;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .button-add-to-card:hover {
+            background-color: #B88E2F;
+            color: #fff;
+        }
+
+        .product-btn button{
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: transparent;
+        }
+
+        .product-btn button:hover {
+            color: #B88E2F;
+        }
+        .product-btn button:hover .icon{
+            color: #B88E2F;
+        }
+
+        .heart-icon {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cart-product" onclick="goToProductPage(event)">
+        <img src="/CozyCasa/Assets/Images/Product_List_Home2.jpg" alt="Product Image">
+        <div class="overlay">
+            <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+            <div class="product-btn">
+                <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+            </div>
+        </div>
+        <div>Product Name</div>
+        <div>Product Description</div>
+        <div>Price: $19.99</div>
+    </div>
+    <script>
+        function goToProductPage(event) {
+            const target = event.target;
+            const isButton = target.tagName.toLowerCase() === 'button';
+            if (!isButton) {
+                window.location.href = "product_page.html";
+            }
+        }
+
+        function addToCart(event) {
+            event.stopPropagation();
+            // Thêm sản phẩm vào giỏ hàng tại đây
+        }
+
+        function share(event) {
+            event.stopPropagation();
+            // Xử lý chia sẻ sản phẩm tại đây
+        }
+
+        function compare(event) {
+            event.stopPropagation();
+            // Xử lý so sánh sản phẩm tại đây
+        }
+
+        function like(event) {
+            event.stopPropagation();
+            const likeButton = event.currentTarget.querySelector('.icon');
+            likeButton.classList.toggle('heart-icon');
+            // Xử lý yêu thích sản phẩm tại đây
+        }
+    </script>
+</body>
+
+</html>

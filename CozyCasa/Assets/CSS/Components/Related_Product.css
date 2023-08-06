@@ -1,0 +1,30 @@
+.related_product {
+    font-family: 'Poppins', sans-serif;
+}
+
+#related-text {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.show_more_btn {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    width: 245px;
+    height: 48px;
+    background-color: #fff;
+    color: #B88E2F;
+    border-style: solid;
+    border-color: #B88E2F;
+    display: block;
+    margin: 0 auto;
+}
+
+.show_more_btn:hover {
+    background-color: #B88E2F;
+    color: #fff;
+}

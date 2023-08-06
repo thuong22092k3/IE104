@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Inspirations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="Inspirations">
+        <div class="text-inspirations">
+            <div id="inspirations-header">50+ Beautiful rooms </br> inspiration</div>
+            <div id="inspirations-content">Our designer already made a lot of beautiful </br> prototipe of rooms that
+                inspire
+                you</div>
+            <button class="explore_more_btn">
+                Explore More
+            </button>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img  src="/CozyCasa/Assets/Images/inspirations1.jpg" alt="">
+                    <div class="slide-content">
+                        <p id="slide-content1">01 -- Bedroom</p>
+                        <p id="slide-content2">Inner Peace</p>
+                    </div>
+                    <button class="slide_btn">
+                        &#8594;
+                    </button>
+                </div>
+                <div class="slide">
+                    <img src="/CozyCasa/Assets/Images/inspirations2.jpg" alt="">
+                    <div class="slide-content">
+                        <p id="slide-content1">02 -- Livingroom</p>
+                        <p id="slide-content2">Inner Peace</p>
+                    </div>
+                    <button class="slide_btn">
+                        &#8594;
+                    </button>
+                </div>
+                <div class="slide">
+                    <img src="/CozyCasa/Assets/Images/inspirations3.jpg" alt="">
+                    <div class="slide-content">
+                        <p id="slide-content1">03 -- Bathoom</p>
+                        <p id="slide-content2">Inner Peace</p>
+                    </div>
+                    <button class="slide_btn">
+                        &#8594;
+                    </button>
+                </div>
+                <!-- <img class="slide" src="/CozyCasa/Assets/Images/inspirations1.jpg" alt="">
+                <img class="slide" src="/CozyCasa/Assets/Images/inspirations2.jpg" alt="">
+                <img class="slide" src="/CozyCasa/Assets/Images/inspirations3.jpg" alt=""> -->
+            </div>
+            <a id="prev" onclick="prevSlide()"><i class="icon fas fa-angle-left" aria-hidden="true"></i></a>
+            <a id="next" onclick="nextSlide()"><i class="icon fas fa-angle-right" aria-hidden="true"></i></a>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="/CozyCasa/Assets/JAVASCRIPTS/Components/Inspirations.js"></script>
+</body>
+
+</html>

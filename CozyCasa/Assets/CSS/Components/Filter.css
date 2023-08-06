@@ -1,0 +1,126 @@
+/* Căn chỉnh filter */
+.filter {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #F9F1E7;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.filter-content {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.filter-icon,
+.filter-icon-grid,
+.filter-icon-list {
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-icon i,
+.filter-icon-grid i,
+.filter-icon-list i {
+    color: #000000;
+}
+
+.filter-icon-grid i,
+.filter-icon-list i {
+    margin-left: 20px;
+}
+
+.filter-icon i{
+    margin-right: 5px;
+}
+
+.filter-icon i:hover,
+.filter-icon-grid i:hover,
+.filter-icon-list i:hover {
+    color: #B88E2F;
+}
+
+.filter-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.filter-divider {
+    height: 37px;
+    width: 2px;
+    background-color: #9F9F9F;
+    margin: 0 10px;
+}
+
+.filter-summary {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.filter-controls {
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.filter-show {
+    padding-right: 30px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+
+.filter-show input[type="number"] {
+    width: 55px;
+    height: 55px;
+    border: none;
+}
+
+.filter-show input[type="number"]:hover {
+    border: 2px solid #B88E2F;
+}
+
+.filter-show input[type="number"]:focus {
+    border: 2px solid #B88E2F;
+}
+
+
+.filter-show input[value="16"] {
+    color: #9F9F9F;
+    font-size: 20px;
+    text-align: center;
+}
+
+.filter-sort select {
+    width: 188px;
+    height: 55px;
+    border: none;
+    color: #9F9F9F;
+    font-size: 20px;
+}
+
+select {
+    /* Khoảng cách giữa nội dung và lề (padding) của ô input */
+    padding: 0px 30px;
+    /* Khoảng cách giữa ô input và các phần tử lân cận */
+    margin: 0;
+    /* Các thuộc tính khác tùy ý muốn */
+
+}
+
+select:hover{
+    border: 2px solid #B88E2F;
+}
+
+select:focus{
+    border: 2px solid #B88E2F;
+}

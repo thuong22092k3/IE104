@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Our_Product.css">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Pagination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="product-list-home">
+        <div class="product-list">
+            <div class="product" onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home1.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -30%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Syltherine</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 2.500.000</div>
+                        <div class="product-old-price">Rp 3.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home2.jpg" alt="" class="product-image">
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Leviosa</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 2.500.000</div>
+                        <div class="product-old-price">Rp 3.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home3.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -50%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Lolito</div>
+                    <div class="product-description">Luxury big sofa</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 7.000.000</div>
+                        <div class="product-old-price">Rp 14.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home4.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Respira</div>
+                    <div class="product-description">Outdoor bar table and stool</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 500.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home5.jpg" alt="" class="product-image">
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Grifo</div>
+                    <div class="product-description">Night lamp</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 1.500.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home6.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Muggo</div>
+                    <div class="product-description">Small mug</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 150.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home7.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -50%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Pingky</div>
+                    <div class="product-description">Cute bed set</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 7.000.0000</div>
+                        <div class="product-old-price">Rp 14.000.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home8.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Potty</div>
+                    <div class="product-description">Minimalist flower pot</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 500.000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home1.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -30%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Syltherine</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 2.500.000</div>
+                        <div class="product-old-price">Rp 3.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home2.jpg" alt="" class="product-image">
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Leviosa</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 2.500.000</div>
+                        <div class="product-old-price">Rp 3.500.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home3.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -50%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Lolito</div>
+                    <div class="product-description">Luxury big sofa</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 7.000.000</div>
+                        <div class="product-old-price">Rp 14.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home4.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Respira</div>
+                    <div class="product-description">Outdoor bar table and stool</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 500.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home5.jpg" alt="" class="product-image">
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Grifo</div>
+                    <div class="product-description">Night lamp</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 1.500.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home6.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Muggo</div>
+                    <div class="product-description">Small mug</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 150.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home7.jpg" alt="" class="product-image">
+                <div class="product-discount">
+                    -50%
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Pingky</div>
+                    <div class="product-description">Cute bed set</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 7.000.0000</div>
+                        <div class="product-old-price">Rp 14.000.000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product"  onclick="goToProductPage(event)">
+                <img src="/CozyCasa/Assets/Images/Product_List_Home8.jpg" alt="" class="product-image">
+                <div class="new-product">
+                    New
+                </div>
+                <div class="overlay">
+                    <button class="button-add-to-card" onclick="addToCart(event)">Add to cart</button>
+                    <div class="product-btn">
+                        <button onclick="share(event)"><i class="icon fas fa-share-alt"></i>Share</button>
+                        <button onclick="compare(event)"><i class="icon fas fa-exchange-alt"></i>Compare</button>
+                        <button onclick="like(event)"><i class="icon fas fa-heart"></i>Like</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">Potty</div>
+                    <div class="product-description">Minimalist flower pot</div>
+                    <div class="product-price">
+                        <div class="product-new-price">Rp 500.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="page-button" id="pagination-active" onclick="showPage(1)">1</button>
+            <button class="page-button" onclick="showPage(2)">2</button>
+            <button class="page-button" onclick="showPage(3)">3</button>
+            <button class="next-button" onclick="nextPage()">Next</button>
+          </div>
+    </div>
+
+   <script src="/CozyCasa/Assets/JAVASCRIPTS/Components/Product_List.js"></script>
+</body>
+
+</html>

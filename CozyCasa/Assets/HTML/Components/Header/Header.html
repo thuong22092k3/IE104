@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Cart_Sidebar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="Logo_Name">
+                    <a href="#">Logo</a>
+                </div>
+                <ul class="tab">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/CozyCasa/Assets/HTML/Components/Shop/Shop.html">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/CozyCasa/Assets/HTML/Components/Contact/Contact.html">Contact</a></li>
+                </ul>
+
+                <div class="icon">
+                    <div>
+                        <button class="header_user">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div >
+                        <button class="header_search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+                    <div >
+                        <button class="header_heart">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div >
+                        <button id="cartIcon" class="header_cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="overlay" class="hidden"></div>
+    <div id="cartSidebar" class="cart-sidebar hidden">
+        <div class="cart-sidebar-header">
+            <h2 class="cart-sidebar-tite">Shopping Cart</h2>
+            <button class="close-cartsidebar" id="closeCartButton"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
+        </div>
+        <hr id="hr-top">
+        <div class="cart-sidebar-items">
+            <!-- Sản phẩm 1 -->
+            <div class="cart-sidebar-item">
+                <img src="/CozyCasa/Assets/Images/Asgaard sofa 5.jpg" alt="Product 1">
+                <div class="item-cart-sidebar-info">
+                    <p>Asgaard sofa</p>
+                    <div class="cart-sidebar-price-content">
+                        <div>1&emsp;x&emsp;</div>
+                        <div id="cart-sidebar-price">Rs. 250,000.00</div>
+                    </div>
+                </div>
+                <button class="delete-cart-sidebar-item" onclick="removeFromCart(index)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></button>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="cart-sidebar-item">
+                <img src="/CozyCasa/Assets/Images/Asgaard sofa 5 (1).jpg" alt="Product 2">
+                <div class="item-cart-sidebar-info">
+                    <p>Casaliving Wood</p>
+                    <div class="cart-sidebar-price-content">
+                        <div>1&emsp;x&emsp;</div>
+                        <div id="cart-sidebar-price">Rs. 250,000.00</div>
+                    </div>
+                </div>
+                <button class="delete-cart-sidebar-item" onclick="removeFromCart(index)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <div class="cart-sidebar-summary">
+            <div>Subtotal</div>
+            <div id="cart-sidebar-subtotal">Rs. 520,000.00</div>
+        </div>
+        <hr id="hr-bot">
+        <div class="cart-sidebar-buttons">
+            <button onclick="goToCart()">Cart</button>
+            <button onclick="goToCheckOut()">Checkout</button>
+            <button onclick="goToComparision()">Comparison</button>
+        </div>
+    </div>
+    <script src="/CozyCasa/Assets/JAVASCRIPTS/Components/Header.js"></script>
+</body>
+
+</html>

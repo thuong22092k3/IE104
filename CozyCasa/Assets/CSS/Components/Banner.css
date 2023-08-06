@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.banner{
+    position: relative;
+    background: url("/CozyCasa/Assets/Images/banner.jpg") ;
+    height: 716.83px;
+    background-size:cover;
+    background-position: center;
+}
+
+.card{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 643px;
+    height: 443px;
+    background-color: #FFF3E3;
+    border-radius:10px;
+}
+
+.content{
+    padding: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+.content p{
+    padding: 2px 0;
+}
+#p1{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+#p2{
+    padding: 0 4px;
+    font-size: 52px;
+    font-weight: 700;
+    color: #B88E2F;
+}
+
+#p3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.buy_now_btn{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 48px;
+    width: 222px;
+    height: 74px;
+    background-color: #B88E2F;
+    color: #fff;
+    border: none;
+}
+.buy_now_btn:hover{
+    background-color: #B88E2FCC;
+}

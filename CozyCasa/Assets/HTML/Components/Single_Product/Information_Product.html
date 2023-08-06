@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Information_Product.css">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Font_Styles.css">
+</head>
+
+<body>
+    <div class="product-info-container">
+        <div class="thumbnail-images">
+            <img src="/CozyCasa/Assets/Images/In4 Outdoor sofa set 2.jpg" alt="Thumbnail 1" class="thumbnail"
+                onclick="changeMainImage('/CozyCasa/Assets/Images/In4 Outdoor sofa set 2.jpg')">
+            <img src="/CozyCasa/Assets/Images/In4 Outdoor sofa set_2 1.jpg" alt="Thumbnail 2" class="thumbnail"
+                onclick="changeMainImage('/CozyCasa/Assets/Images/In4 Outdoor sofa set_2 1.jpg')">
+            <img src="/CozyCasa/Assets/Images/In4 Stuart sofa 1.jpg" alt="Thumbnail 3" class="thumbnail"
+                onclick="changeMainImage('/CozyCasa/Assets/Images/In4 Stuart sofa 1.jpg')">
+            <img src="/CozyCasa/Assets/Images/In4 Maya sofa three seater (1) 1.jpg" alt="Thumbnail 4" class="thumbnail"
+                onclick="changeMainImage('/CozyCasa/Assets/Images/In4 Maya sofa three seater (1) 1.jpg')">
+            <!-- Add more thumbnail images as needed -->
+        </div>
+        <div class="product-info-images">
+            <img src="/CozyCasa/Assets/Images//In4 Asgaard_Sofa_1.jpg" alt="Main Image" class="main-image">
+        </div>
+        <div class="product-info">
+            <div class="product-info-title">Asgaard sofa</div>
+            <div class="product-info-price">Rs. 250,000.00</div>
+            <div class="product-info-rating">
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="product-info-divider"></div>
+                <p class="product-info-text">5 Customer Review</p>
+            </div>
+            <div class="product-info-description">
+                Setting the bar as one of the loudest speakers in its class, the </br> Kilburn is a compact,
+                stout-hearted hero with a well-balanced </br> audio which boasts a clear midrange and extended highs for
+                a </br> sound.
+            </div>
+            <div class="product-info-size">
+                <label>Size: </br></label>
+                <button id="size-active" onclick="selectSize('L')">L</button>
+                <button onclick="selectSize('XL')">XL</button>
+                <button onclick="selectSize('XS')">XS</button>
+            </div>
+            <div class="product-info-color">
+                <label>Color: </br></label>
+                <button id="purple" onclick="selectColor('purple')"></button>
+                <button id="black" onclick="selectColor('black')"></button>
+                <button id="brown" onclick="selectColor('brown')"></button>
+                <!-- Add more color options as needed -->
+            </div>
+            <div class="product-info-quantity">
+                <div class="quantity-input-container">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <span class="quantity-label" id="quantity-label">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="product-info-buttons">
+                    <button id="btn-add-to-cart-info">Add to Cart</button>
+                    <button id="btn-compare-info">+ Compare</button>
+                </div>
+            </div>
+            <hr>
+            <div class="product-info-details">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>SKU</td>
+                            <td>&emsp;:&emsp; </td>
+                            <td>SS001</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>&emsp;:&emsp;</td>
+                            <td>Sofas</td>
+                        </tr>
+                        <tr>
+                            <td>Tags</td>
+                            <td> &emsp;:&emsp;</td>
+                            <td>Sofa, Chair, Home, Shop</td>
+                        </tr>
+                        <tr>
+                            <td>Share</td>
+                            <td>&emsp;:&emsp;</td>
+                            <td><i class="fa fa-facebook-square" aria-hidden="true"></i>&emsp;
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>&emsp;
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to change the main image when clicking on a thumbnail
+        function changeMainImage(imageUrl) {
+            const mainImage = document.querySelector('.main-image');
+            mainImage.src = imageUrl;
+        }
+        let quantity = 1; // Số lượng sản phẩm mặc định
+
+        // JavaScript function to decrease quantity
+        function decreaseQuantity() {
+            if (quantity > 1) {
+                quantity -= 1;
+                updateQuantityLabel();
+            }
+        }
+
+        // JavaScript function to increase quantity
+        function increaseQuantity() {
+            quantity += 1;
+            updateQuantityLabel();
+        }
+
+        // Update the quantity label with the current value
+        function updateQuantityLabel() {
+            const quantityLabel = document.getElementById('quantity-label');
+            quantityLabel.textContent = quantity;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+.billing-form {
+    width: auto;
+    margin: 64px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 140px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#first-name,
+#last-name {
+    width: 211px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 453px;
+    height: 75px;
+    padding: 5px;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    /* Loại bỏ đường viền mặc định */
+    border: 1px solid #B88E2FCC;
+    /* Định dạng viền khi focus */
+    box-shadow: 0 0 3px #B88E2FCC;
+}
+
+.product-subtotal-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-quan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.product-x,.product-quantity{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-price{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.product-item-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.subtotal-label{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subtotal-amount{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.total-label{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.total-amount{
+    font-size: 24px;
+    font-weight: 700;
+    color: #B88E2F;
+}
+
+.form-group-hr {
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-item-description{
+    font-size: 16px;
+    font-weight: 300;
+    color: #9F9F9F;
+    margin-bottom: 20px;
+}
+
+.payment-options{
+    font-size: 16px;
+    font-weight: 500;
+    color: #9F9F9F;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-text{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#privacy-policy{
+    text-decoration-line: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.place-order-btn {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 64px;
+    width: 318px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background-color: #B88E2F;
+    color: #fff;
+    border: none;
+}
+
+.billing-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.billing-section .section-item {
+    width: 31%;
+}
+
+.place-order-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 31%;
+    margin-right: 4%;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+    .billing-section .section-item {
+        width: 100%;
+    }
+}

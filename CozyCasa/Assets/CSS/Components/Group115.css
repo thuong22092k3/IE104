@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.group115{
+    background-size:cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
+}
+
+.group115 p{
+    text-align: center;
+    padding: 4px 0;
+}
+
+#title1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #333333;
+}
+#title2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    text-align: center;
+    margin: 10px; /* Bo góc ảnh */
+    overflow: hidden; /* Đảm bảo chữ không bị che khuất nếu ảnh bị bo góc */
+  }
+  
+  .image {
+    display: block;
+    border-radius: 10px;
+    width: 381px;
+    height: 480px; /* Điều chỉnh kích thước ảnh tùy ý */
+  }
+  
+  .text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+  }
+ 
+  
+  
+  
+  

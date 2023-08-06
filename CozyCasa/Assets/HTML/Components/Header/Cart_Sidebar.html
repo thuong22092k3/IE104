@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Cart_Sidebar.css">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Font_Styles.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h2 class="cart-sidebar-tite">Shopping Cart</h2>
+            <button class="close-cartsidebar" id="closeCartButton"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
+        </div>
+        <hr id="hr-top">
+        <div class="cart-sidebar-items">
+            <!-- Sản phẩm 1 -->
+            <div class="cart-sidebar-item">
+                <img src="/CozyCasa/Assets/Images/Asgaard sofa 5.jpg" alt="Product 1">
+                <div class="item-cart-sidebar-info">
+                    <p>Asgaard sofa</p>
+                    <div class="cart-sidebar-price-content">
+                        <div>1&emsp;x&emsp;</div>
+                        <div id="cart-sidebar-price">Rs. 250,000.00</div>
+                    </div>
+                </div>
+                <button class="delete-cart-sidebar-item" onclick="removeFromCart(index)">x</button>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="cart-sidebar-item">
+                <img src="/CozyCasa/Assets/Images/Asgaard sofa 5 (1).jpg" alt="Product 2">
+                <div class="item-cart-sidebar-info">
+                    <p>Casaliving Wood</p>
+                    <div class="cart-sidebar-price-content">
+                        <div>1&emsp;x&emsp;</div>
+                        <div id="cart-sidebar-price">Rs. 250,000.00</div>
+                    </div>
+                </div>
+                <button class="delete-cart-sidebar-item" onclick="removeFromCart(index)">x</button>
+            </div>
+        </div>
+
+        <div class="cart-sidebar-summary">
+            <div>Subtotal</div>
+            <div id="cart-sidebar-subtotal">Rs. 520,000.00</div>
+        </div>
+        <hr id="hr-bot">
+        <div class="cart-sidebar-buttons">
+            <button onclick="goToCart()">Cart</button>
+            <button onclick="goToCheckOut()">Checkout</button>
+            <button onclick="goToComparision()">Comparison</button>
+        </div>
+    </div>
+</body>
+
+</html>
