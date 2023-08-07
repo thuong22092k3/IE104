@@ -1,0 +1,177 @@
+/* Reset some default styles */
+
+.blog-container {
+    display: flex;
+    max-width: full;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-section {
+    flex: 1;
+    padding: 50px;
+}
+
+.blog-review {
+    margin-bottom: 50px;
+
+}
+
+.blog-review img {
+    width: 817px;
+    height: 500px;
+}
+
+.review-info {
+    margin-top: 10px;
+    color: #9F9F9F;
+
+}
+
+.review-info span {
+    margin-right: 30px;
+}
+
+.blog-review h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.blog-review p {
+    margin-bottom: 15px;
+    color: #9F9F9F;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Các phần CSS hiện tại bạn đã có */
+
+/* Thêm phần CSS mới */
+.readmore-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.shorter-line {
+    position: absolute;
+    bottom: 20;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    pointer-events: none;
+}
+
+.readmore-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.readmore-btn:hover {
+    color: #B88E2FCC;
+    font-weight: 600;
+}
+
+.categories {
+    margin-top: 40px;
+    color: #9F9F9F;
+}
+
+.blog-table-header{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.categories table {
+    width: 100%;
+}
+
+.categories td {
+    padding: 20px 20px 0 0;
+}
+
+.recent-posts {
+    margin-top: 40px;
+}
+
+.recent-posts table {
+    width: 100%;
+}
+
+.recent-posts td {
+    padding: 20px 20px 0 0;
+}
+
+.recent-posts img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input input[type="text"] {
+    padding: 8px 30px 8px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 311px;
+    height: 40px;
+}
+
+.search-input button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input button:hover {
+    color: #B88E2FCC;
+}
+
+.search-input button:focus {
+    color: #B88E2FCC;
+}
+
+.search-input input:focus {
+    outline: none;
+    border: 1px solid #B88E2FCC;
+    box-shadow: 0 0 3px #B88E2FCC;
+}
+
+.recent-posts-head{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.recent-posts-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #9F9F9F;
+}

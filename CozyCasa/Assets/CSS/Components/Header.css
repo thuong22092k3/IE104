@@ -89,8 +89,8 @@ nav .menu {
 #cartSidebar {
     z-index: 1000;
     position: fixed;
-    top: 0px; /* Để đưa cart sidebar phía trên icon cart, bạn có thể điều chỉnh giá trị này */
-    right: 20px; 
+    top: 60px; /* Để đưa cart sidebar phía trên icon cart, bạn có thể điều chỉnh giá trị này */
+    right: 50px; 
 }
 
 #overlay {

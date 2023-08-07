@@ -5,26 +5,43 @@ var overlay = document.getElementById("overlay");
 
 // Hiển thị cart sidebar khi đưa chuột vào icon cart trên thanh header
 // show the overlay and the dialog
-cartIcon.addEventListener('click', function () {
-    cartSidebar.classList.remove('hidden');
+let clicked = false;
+let doubleClicked = false;
+
+cartIcon.addEventListener("click", function() {
+  if (!clicked) {
+    // Thực hiện hành động khi chỉ click
+    showCartSidebar();
+    clicked = true;
+    setTimeout(function() {
+      clicked = false;
+    }, 5000); // Reset trạng thái clicked sau 300ms
+  } else if (clicked && !doubleClicked) {
+    // Đợi thêm 300ms để kiểm tra nếu có double click
+    doubleClicked = true;
+    setTimeout(function() {
+      clicked = false;
+      doubleClicked = false;
+    }, 5000);
+  }
 });
 
-// hide the overlay and the dialog
-closeCartButton.addEventListener('click', function () {
-    cartSidebar.classList.add('hidden');
-    overlay.classList.add('hidden');
-});
-
-cartIcon.addEventListener("click", () => {
-    cartSidebar.classList.add("active");
-    overlay.style.display = "block";
+cartIcon.addEventListener("dblclick", function(event) {
+  event.preventDefault();
+  // Thực hiện hành động khi double click
+  goToCart();
 });
 
 // Ẩn cart sidebar và overlay khi nhấp nút "Close"
 closeCartButton.addEventListener("click", () => {
-    cartSidebar.classList.remove("active");
+    cartSidebar.classList.add('hidden');
     overlay.style.display = "none";
 });
+
+function showCartSidebar() {
+    cartSidebar.classList.remove('hidden');
+    overlay.style.display = "block";
+  }
 
 function goToCart() {
     window.location.href = "/CozyCasa/Assets/HTML/Components/Cart/Cart.html";
@@ -32,4 +49,8 @@ function goToCart() {
 
 function goToCheckOut() {
     window.location.href = "/CozyCasa/Assets/HTML/Components/Check_Out/Check_Out.html";
+}
+
+function goToBlog() {
+    window.location.href = "/CozyCasa/Assets/HTML/Components/Blog/Blog.html";
 }
