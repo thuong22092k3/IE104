@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/About_Detail.css">
+    <link rel="stylesheet" href="/CozyCasa/Assets/CSS/Components/Font_Styles.css">
+    <title>About Us - Cozy Casa</title>
+</head>
+
+<body>
+    <div class="about-section">
+        <div class="about-text">
+            <div class="about-header">About Us</div>
+            <div class="about-content">
+                <p>Welcome to Cozy Casa, your ultimate destination for high-quality and stylish furniture and home
+                    decor.
+                    Our mission is to provide you with the perfect pieces to turn your house into a cozy and beautiful
+                    home.
+                </p>
+                <p>With years of experience in the industry, we take pride in offering a wide range of carefully curated
+                    furniture items that cater to various styles and preferences. Whether you're looking for modern
+                    minimalism or classic elegance, we have something for everyone.</p>
+                <p>At Cozy Casa, we believe that furniture should not only be functional but also a reflection of your
+                    personal taste. Our team of dedicated designers and craftsmen work tirelessly to bring you unique
+                    and
+                    captivating pieces that you'll cherish for years to come.</p>
+                <p>Thank you for choosing Cozy Casa to be a part of your home transformation journey. We look forward to
+                    helping you create a space that truly feels like your own.</p>
+            </div>
+        </div>
+        <div class="about-img">
+            <div class="image-wrapper">
+                <img class="image" id="about" src="/CozyCasa/Assets/Images/inspirations1.jpg" alt="Ảnh 1">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const images = [
+            '/CozyCasa/Assets/Images/inspirations2.jpg',
+            '/CozyCasa/Assets/Images/inspirations3.jpg',
+        ];
+
+        const imageElement = document.getElementById('about');
+        let currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            imageElement.src = images[currentIndex];
+        }
+
+        // Thay đổi ảnh sau mỗi 5 giây (5000 milliseconds)
+        setInterval(changeImage, 1000);
+    </script>
+</body>
+
+</html>

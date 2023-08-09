@@ -7,9 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.blog-section {
-    flex: 1;
-    padding: 50px;
+.blog-section-1 {
+    padding: 100px 0 50px 100px;
+}
+
+.blog-section-2 {
+    padding: 100px 150px 50px 0;
 }
 
 .blog-review {
@@ -41,6 +44,8 @@
 
 .blog-review p {
     margin-bottom: 15px;
+    margin-right: 170px;
+    word-spacing: 1.5px;
     color: #9F9F9F;
     font-size: 15px;
     font-weight: 400;

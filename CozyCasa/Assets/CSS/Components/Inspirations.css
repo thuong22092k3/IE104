@@ -27,7 +27,7 @@
 .explore_more_btn {
   font-size: 16px;
   font-weight: 600;
-  margin-top: 48px;
+  margin-top: 32px;
   width: 176px;
   height: 48px;
   background-color: #B88E2F;
@@ -63,25 +63,29 @@
   width: 217px;
   height: 130px;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #slide-content1{
   font-size: 16px;
   font-weight: 500;
   color: #616161;
+  margin-top: 32px;
+  margin-left: 32px;
+  opacity: 1;
 }
 
 #slide-content2{
   font-size: 28px;
   font-weight: 600;
   color: #3A3A3A;
+  margin-left: 32px;
+  opacity: 1;
 }
 
 .slide_btn {
   font-size: 20px;
   font-weight: 600;
-  /* margin-top: 48px; */
   width: 48px;
   height: 48px;
   background-color: #B88E2F;
@@ -100,17 +104,17 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: #fff;
   color: #B88E2F;
   text-align: center;
   align-items: center;
-  line-height: 30px;
+  line-height: 35px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 2px #c0b9b9;
+  box-shadow: 1px 5px 10px 2px #D8D8D8;
 }
 
 #prev:hover,
