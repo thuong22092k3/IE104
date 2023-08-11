@@ -1,0 +1,41 @@
+
+.return-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FCF8F3;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #898989 ;
+}
+
+.returns-column {
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.returns-column {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.return-info {
+    margin-bottom: 30px;
+}
+
+.return-info h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #B88E2F;
+}
+

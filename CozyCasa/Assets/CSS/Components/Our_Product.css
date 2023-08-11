@@ -34,7 +34,8 @@
     margin-bottom: var(--spacing);
     height: 446px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .product-image {

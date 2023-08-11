@@ -58,6 +58,7 @@ nav .menu {
 
 .menu .tab li a.active {
     color: #B88E2F;
+    font-weight: 700;
 }
 
 .menu .tab li a:hover {

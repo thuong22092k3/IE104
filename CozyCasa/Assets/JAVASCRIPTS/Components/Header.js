@@ -4,6 +4,7 @@ var closeCartButton = document.getElementById("closeCartButton");
 var overlay = document.getElementById("overlay");
 var searchBar = document.getElementById("search-bar");
 var searchIcon = document.getElementById("search-icon");
+var shopLink = document.getElementById("shopLink");
 
 // Hiển thị cart sidebar khi đưa chuột vào icon cart trên thanh header
 // show the overlay and the dialog
@@ -70,4 +71,16 @@ const heartButton = document.getElementById("heartIcon");
 
 heartButton.addEventListener("click", function() {
     heartButton.classList.toggle("active");
+});
+
+    
+shopLink.addEventListener("click", function() {
+    // Loại bỏ lớp "active" từ tất cả các nút
+    const allLinks = document.querySelectorAll(".menu .tab li a");
+    allLinks.forEach(link => {
+        link.classList.remove("active");
+    });
+
+    // Thêm lớp "active" cho nút "Shop"
+    shopLink.classList.add("active");
 });

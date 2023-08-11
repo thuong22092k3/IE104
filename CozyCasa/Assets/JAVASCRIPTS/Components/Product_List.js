@@ -4,6 +4,7 @@ function goToProductPage(event) {
     if (!isButton) {
         window.location.href = "/CozyCasa/Assets/HTML/Components/Single_Product/Single_Product.html";
     }
+    
 }
 
 function addToCart(event) {
@@ -19,6 +20,7 @@ function share(event) {
 function compare(event) {
     event.stopPropagation();
     // Xử lý so sánh sản phẩm tại đây
+    window.location.href = "/CozyCasa/Assets/HTML/Components/Comparision/Comparision.html";
 }
 
 function like(event) {

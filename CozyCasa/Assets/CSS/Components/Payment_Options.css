@@ -1,0 +1,70 @@
+
+.payment-option {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCF8F3;
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.payment-methods {
+    list-style: none;
+    padding: 0;
+}
+
+.help-links li {
+    margin-bottom: 5px;
+}
+
+.payment-options-column {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.payment-method {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.payment-methods h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #B88E2F;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+#contact-us a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.divider {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    margin: 0 100px;
+}
